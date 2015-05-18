@@ -1,0 +1,21 @@
+{
+  "name": "bvong_portfolio",
+  "version": "0.0.0",
+  "homepage": "http://bernard-vong.fr/",
+  "authors": [
+    "Bernard VONG <vong.bernard@gmail.com>",
+    "Patrick HENG <'http://hengpatrick.fr/'>",
+    "Robin MASTROMARINO <'http://robinmastromarino.com/'>"
+
+  ],
+  "license": "",
+  "ignore": [
+    "*/.*",
+    "node_modules",
+    "vendor",
+    "public/bower"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1"
+  }
+}

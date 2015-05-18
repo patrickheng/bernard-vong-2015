@@ -1,0 +1,35 @@
+<div id="wrapper" ng-class="{'open': navOpen, 'closing': isClosing}">
+	<poly-background></poly-background>
+
+	<div id="section-container">
+		<section id="home" class="active">
+			<div class="section-content">
+				<div id="intro-container" class="clearfix">
+					<div id="start-title">
+						<h1>BERNARD VONG</h1>
+						<h2>BACK END DEVELOPER</h2>
+					</div>
+
+					<div id="description">
+						<div class="intro left">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor je suis incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud bleu  la exercitation ullamco laboris nisi ut aliquip.
+						</div>
+						<div class="intro right">
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section ng-repeat="project in projects" class="{{project.ref}}" style="background : #27ae60; text-align: center; " repeat-callback>
+			<div class="section-content" style="background : black">
+				{{project.name}} <br/>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet consequatur corporis dignissimos distinctio doloremque eum, fuga iste magni natus necessitatibus neque nesciunt nisi odit perferendis, praesentium qui, repellendus vitae.
+			</div>
+
+		</section>
+	</div>
+	<projects-navigation></projects-navigation>
+</div>

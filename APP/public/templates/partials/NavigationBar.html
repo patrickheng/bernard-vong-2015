@@ -1,0 +1,35 @@
+<div id="nav-container" ng-class="{'open': navOpen, 'closing': isClosing}">
+	<div id="burger" ng-click="toggleNav()">
+		<span></span>
+	</div>
+	<div id="sidebar">
+		<nav>
+			<ul id="project-nav">
+				<li><a href="#">Accueil</a></li>
+				<li ng-repeat="project in projects">
+					<a href="#">
+						{{project.name}}
+						<span>0{{$index}}</span>
+					</a>
+				</li>
+				<li class="soon"><a href="#">Bientot <span>00</span></a></li>
+			</ul>
+		</nav>
+		<div id="bottom-sidebar">
+			<div id="infos" ng-class="{'open': navOpen}">
+				<h2>Bernard Vong</h2>
+				<p>
+					<a href="mailto:vong.bernard@gmail.com">vong.bernard@gmail.com</a>
+					<a href="tel:+33662561695"></a>+33 6 62 56 16 95
+				</p>
+				<strong>Create by <a href="http://bangbang.hengpatrick.fr/">BANGBANG</a> © 2015</strong>
+			</div>
+			<ul id="social">
+				<li><a class="icon-twitter" target="_blank" href="http://www.twitter.fr/pat_hg"></a></li>
+				<li><a class="icon-github" target="_blank" href="https://github.com/BernardVong"></a></li>
+				<li><a class="icon-linkedin" target="_blank" href="https://www.linkedin.com/profile/view?id=327161241"></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+

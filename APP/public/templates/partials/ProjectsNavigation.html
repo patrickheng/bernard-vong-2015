@@ -1,0 +1,27 @@
+<div id='projects-navigation' class="orange">
+	<ul id="projects-names">
+		<li ng-repeat="project in projects" ng-class="{
+			'active' : slidePosition == 0
+		}">
+			<div>
+				<span>00</span>
+				Accueil
+			</div>
+		</li>
+
+		<li ng-repeat="project in projects" ng-class="{
+			'active' : slidePosition == $index+1
+		}">
+			<div>
+				<span>0{{$index+1}}</span>
+				{{project.name}}
+			</div>
+		</li>
+	</ul>
+	<div id="dots">
+		<span id="marker"></span>
+		<div class="dot" ng-click="changePos($event)" pos="0"></div>
+		<div class="dot" ng-click="changePos($event)" ng-repeat="project in projects track by $index" pos="{{$index+1}}"></div>
+
+	</div>
+</div>

@@ -1,0 +1,7 @@
+
+API/.idea/
+APP/.idea/
+.idea/
+
+APP/node_modules/
+APP/public/dist
