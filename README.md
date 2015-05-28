@@ -17,4 +17,4 @@ Back :
 Front :
 * Gulp
 * Compass
-* jQuery
+* Angular
